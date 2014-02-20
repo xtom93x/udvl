@@ -9,3 +9,5 @@ Cvičenia
 * Uto 16:30 H6
 
 Inštrukcie na odovzdávanie cvičení čoskoro pribudú.
+
+* [Cvičenie 1](cv01)
