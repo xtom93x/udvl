@@ -8,7 +8,8 @@ Binárka pre windows sa dá stiahnuť priamo na ich stránke, ale potrebuje ešt
 Vašou hlavnou úlohou na tomto cvičení je:
 * vytvoriť si konto na https://github.com/ (ak už nemáte) a poslať mailom na
   adresu `siska@ii.fmph.uniba.sk` vaše univerzitné prihlasovacie id (login do
-  AIS-u, v tvare priezviskoCISLO) a prihlasovacie meno do github-u
+  AIS-u, v tvare priezviskoCISLO) a prihlasovacie meno do github-u.
+  **Do predmetu uveddte "UdVL registracia"**.
 * po vyriešení týchto cvík si odložiť riešenie 2. príkladu (dva textové súbory),
   na budúcich cvičeniach si ukážeme, ako sa odovzdajú v github-e.
 
