@@ -8,22 +8,22 @@ riešenie sa odovzdáva na GitHub-e podla nasledovných inštrukcií.
 Na GitHub-e máte (ak ste poslali správny mail) v rámci organizácie
 [FMFI-UK-1-AIN-411-2014](https://github.com/orgs/FMFI-UK-1-AIN-411-2014)
 súkromný repozitár na odovzdávanie úloh s rovnakým názvom ako je vaše prihlasovacie
-meno do AISu (viete sa k nemu dostat cez adresu
-`https://github.com/FMFI-UK-1-AIN-411-2014/cisloCISLO`).
+meno do AISu (viete sa k nemu dostať cez adresu
+`https://github.com/FMFI-UK-1-AIN-411-2014/priezviskoCISLO`).
 
 Odovzdanie konkrétneho riešenia pozostáva z dvoch krokov:
-- [Nahrať](#nahranie-riešenia) vaše riešenie na GitHub do Vášho repozitára
+- [Nahrať](#nahranie-riešenia) vaše riešenie na GitHub do vášho repozitára
   do správnej vetvy (`branch`).
-- [Vytvoriť `Pull request`](#vytvorenie-pull-requestu) na tej vetve, čím
+- [Vytvoriť _Pull request_](#vytvorenie-pull-requestu) na tej vetve, čím
   riešenie naozaj odovzdáte.  V tomto vytvorenom requeste sa objavia
-  prípadne komentáre k vášmu riešeniu, ako aj finálne bodové ohodnotenie.
+  prípadné komentáre k vášmu riešeniu, ako aj finálne bodové ohodnotenie.
 
 **Pri odovzdávaní nezabudnite dodržať [formát riešenia](#formát-riešenia).**
 
 ## Nahranie riešenia
 
 Ak ste už pracovali s git-om, nemalo by to byť nič ťažké. *Ak ste s git-om
-nikdy nepracovali, absolutne s ním nechcete mať nič spoločného a potrebujete
+nikdy nepracovali, absolútne s ním nechcete mať nič spoločného a potrebujete
 odovzdať len jeden / dva súbory, použite prvú možnosť
 ([nahrávanie cez web](#nahrávanie-cez-web))*,
 ale skúste si aspoň prečítať nasledujúce odstavce, aby ste mali predstavu,
@@ -35,16 +35,21 @@ vytvorenie nového súboru). `commit`-y sú organizované vo vetvách (branch),
 pričom vetva je vlastne postupnosť `commit`-ov (zmien).
 
 Git rozlišuje vašu lokálnu verziu repozitára a tú na serveri. Keď vytvoríte
-`commit`, vytvoríte ho iba na svojom lokálnom počítačí (v aktuálnej vetve). Ak
-chcete aby sa objavil na serveri, musíte naň aktuálnu vetvu nahrať (`push`). Ak
+`commit`, vytvoríte ho iba na svojom lokálnom počítači (v aktuálnej vetve). Ak
+chcete aby sa objavil na serveri, musíte naň svoju aktuálnu vetvu nahrať (`push`). Ak
 sa na serveri objavia nové commity, musíte si ich stiahnuť do svojej lokálnej
 kópie (`pull`).
 
-Každé zadania bude hovoriť do akej vetvy (branch) máte svoje riešenie nahrať.
-Pre cvičenia to budú zvyčajne vetvy `cvXX`. Na to musíte najskôr zo serveru
+Každé zadanie bude hovoriť do akej vetvy (branch) máte svoje riešenie nahrať.
+Pre cvičenia to budú zvyčajne vetvy `cvXX`. Na to musíte:
+
+1. najskôr zo serveru
 stiahnuť aktuálnu verziu tej vetvy (bude v nej zadanie, ktoré sme tam nahrali,
-ked sme ho zverejnili), prepnúť sa na ňu (ak nie je aktívna), vytvoriť vaše
-riešenie, `commit`-núť ho a nahrať novú verziu vetvy naspäť na server.
+keď sme ho zverejnili),
+2. prepnúť sa na ňu (ak nie je aktívna),
+3. vytvoriť vaše riešenie,
+4. `commit`-núť ho a
+5. nahrať novú verziu vetvy naspäť na server.
 
 Možnosti:
 - [Nahrávanie cez web](#nahrávanie-cez-web)
@@ -55,7 +60,7 @@ Možnosti:
 ### Nahrávanie cez web
 
 Najskôr potrebujeme otvoriť správnu vetvu (branch), do ktorej máme
-riešenie uložie (napr `cv01`). Jedna možnosť je jednoducho otvoriť Váš súkromný
+riešenie uložiť (napr `cv01`). Jedna možnosť je jednoducho otvoriť váš súkromný
 repozitár a prepnúť sa na správnu vetvu:
 
 ![GitHub branch](images/github-pull-select-branch.png)
@@ -84,8 +89,8 @@ Následne napíšte krátku správu / poznámku a odošlite:
 Ak potrebujete odovzdať viacero súborov, jednoducho postup opakujte.
 Keď sú všetky nahraté, pokračujte [vytvorením pull requestu](#vytvorenie-pull-requestu).
 
-*Hint*: po odoslani súboru, ste na stránke, kde môžete rovno vyrobiť pull
-request zo správnej vetvy:
+*Hint*: po odoslaní súboru, ste na stránke, kde môžete rovno vyrobiť [pull
+request](#vytvorenie-pull-requestu) zo správnej vetvy:
 
 ![GitHub branch](images/github-file-pull.png)
 
@@ -97,15 +102,15 @@ používanie ako čistý git:
 
 http://windows.github.com/
 
-Možno časom pribudne aj nejký podrobnejší návod k nej.
+Možno časom pribudne aj nejaký podrobnejší návod k nej.
 
 ### Git commandline
 
-V Linuxe / OSX stačí otvoriť terminál (v adresári, kde chcete mať
+V Linuxe / OS X stačí otvoriť terminál (v adresári, kde chcete mať
 repozitár), vo Windows po nainštalovaní git-u by sa v context menu pre
 adresár (pravé tlačítko myši) mala objaviť možnosť otvoriť "Git Shell".
 
-Úplne prvý krát je treba naklonovať repozitár (nezabudnite `priezviskoCISLO`
+Úplne prvýkrát je treba naklonovať repozitár (nezabudnite `priezviskoCISLO`
 nahradiť vaším prihlasovacím menom do AISu):
 
 ```sh
@@ -137,7 +142,7 @@ git status # vypise, ze uz nie su ziadne necommitnute zmeny
 git push origin cv01
 ```
 
-Na GitHub-e by sa teraz mala objaviť Vaša zmena, možete si ju pozrieť
+Na GitHub-e by sa teraz mala objaviť vaša zmena, možete si ju pozrieť
 napríklad cez históriu vetvy `cv01`:
 
 `https://github.com/FMFI-UK-1-AIN-411-2014/priezviskoCISLO/commits/cv01`
@@ -178,7 +183,7 @@ Tlačítok na vytvorenie pull requestu je vždy viac než dosť:
 
 GitHub Vám ukáže, k akým zmenám sa chystáte vytvoriť pull request (malo by to
 byť pridanie Vášho riešenia).  Skontrolujte, pre ktorú vetvu vytvárame pull
-request ( `master .. cv01` uplne hore) a kliknite `Create Pull Request`:
+request ( `master .. cv01` úplne hore), a kliknite `Create Pull Request`:
 
 ![GitHub pull request](images/github-pull-creating.png)
 
@@ -189,13 +194,13 @@ ukončíte stlačením tlačidla `Send pull request`:
 ![GitHub pull request](images/github-pull-creating2.png)
 
 Po odoslaní sa vám ukáže novovytvorený pull request. Časom sa v ňom objavia
-komentáre s Vaším hodnotením:
+komentáre s vaším hodnotením:
 
 ![GitHub pull request](images/github-pull-created.png)
 
-Poznámka: aj po otvorení pull requestu možete ďalej nahrávať zmený do vetvy, z
+Poznámka: aj po otvorení pull requestu možete ďalej nahrávať zmeny do vetvy, z
 ktorej ste ho urobili (t.j. `cv01`). Tie sa automaticky objavia v pull requeste
-(GitHub vam umožní pridávať ich aj po termíne, ale tiez zmeny už nebudú
+(GitHub vam umožní pridávať ich aj po termíne, ale tie zmeny už nebudú
 hodnotené).
 
 ## Formát riešenia
