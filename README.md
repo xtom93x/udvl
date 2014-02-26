@@ -15,6 +15,6 @@ Cvičenia
 --------
 * Str 8:10 H6
 
-Inštrukcie na odovzdávanie cvičení čoskoro pribudú.
-
 * [Cvičenie 1](cv01)
+
+[Inštrukcie na odovzdávanie riešení](odovzdavanie.md)
