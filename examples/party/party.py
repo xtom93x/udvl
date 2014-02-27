@@ -42,9 +42,9 @@ def vypis_riesenie(ries):
     # vypiseme vyznam riesenia
     for v in vs:
         v = int(v)
-        print "{0} {1}pojde na party".format(
+        print("{0} {1}pojde na party".format(
                 intToName[abs(v)],
-                "ne" if v < 0 else "")
+                "ne" if v < 0 else ""))
 
 def main():
     # Normalne by sme tu mozno nieco nacitavali zo standardneho vstupu,
@@ -56,8 +56,8 @@ def main():
             # zapiseme nas problem
             zapis_problem(o)
     except IOError as e:
-        print "Chyba pri vytvarani vstupneho suboru ({0}): {1}".format(
-                e.errno, e.strerror)
+        print("Chyba pri vytvarani vstupneho suboru ({0}): {1}".format(
+                e.errno, e.strerror))
         return 1
 
     # spustime SAT solver
@@ -69,15 +69,15 @@ def main():
             # prvy riadok je SAT alebo UNSAT
             sat = i.readline()
             if sat == "SAT\n":
-                print "Riesenie:"
+                print("Riesenie:")
                 # druhy riadok je riesenie
                 ries = i.readline()
                 vypis_riesenie(ries)
             else:
-                print "Ziadne riesenie"
+                print("Ziadne riesenie")
     except IOError as e:
-        print "Chyba pri nacitavani vystupneho suboru ({0}): {1}".format(
-                e.errno, e.strerror)
+        print("Chyba pri nacitavani vystupneho suboru ({0}): {1}".format(
+                e.errno, e.strerror))
         return 1
 
     return 0
