@@ -6,10 +6,10 @@ Binárka pre windows sa dá stiahnuť priamo na ich stránke, ale potrebuje ešt
 (cygwin1.dll, cygz.dll), všetky tri súbory sa nachádzajú v adresári s [nástrojmi](../tools/).
 
 Vašou hlavnou úlohou na tomto cvičení je:
-* vytvoriť si konto na https://github.com/ (ak už nemáte) a poslať mailom na
+* vytvoriť si konto na https://github.com/ (ak ešte nemáte) a poslať mailom na
   adresu `siska@ii.fmph.uniba.sk` vaše univerzitné prihlasovacie id (login do
   AIS-u, v tvare priezviskoCISLO) a prihlasovacie meno do github-u.
-  **Do predmetu uveddte "UdVL registracia"**.
+  **Do predmetu uveďdte "UdVL registracia"**.
 * po vyriešení týchto cvík si odložiť riešenie 2. príkladu (dva textové súbory),
   na budúcich cvičeniach si ukážeme, ako sa odovzdajú v github-e.
 
@@ -17,11 +17,11 @@ Vašou hlavnou úlohou na tomto cvičení je:
 1. príklad
 ----------
 Cheme na párty pozvať niekoho z trojice Jim, Kim a Sára, bohužiaľ každý z nich
-má nejé svoje podmienky.
+má nejaké svoje podmienky.
 
-* Sarah nepôjde na party ak pojde Kim.
+* Sára nepôjde na párty ak pôjde Kim.
 * Jim pôjde na párty, len ak pôjde Kim.
-* Sara nepôjde bez Jima.
+* Sára nepôjde bez Jima.
 
 Zapísané v provorádovej logike (premenná `kim` znamená, že Kim pôjde na párty, atď):
 <pre>
@@ -75,7 +75,7 @@ SAT
 ```
 
 MiniSAT nájde len nejaké riešenie, ak chceme nájsť ďašie, môžeme mu povedať, že toto konkrétne 
-nechceme (nemajú naraz platiť tieto premenne). Toto riešenie je kim &and; &not;jim &and; &not;sarah, znegovaním
+nechceme (nemajú naraz platiť tieto premenné). Toto riešenie je kim &and; &not;jim &and; &not;sarah, znegovaním
 dostaneme &not;kim &or; jim &or; sarah, čo je priamo disjunktívna klauza a môžeme ju pridať k zadaniu:
 
 ```
