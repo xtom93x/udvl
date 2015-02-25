@@ -29,8 +29,8 @@ tak, aby sa navzájom neohrozovali. Ohrozovanie dám je v zmysle
 
 Vyriešená úloha bez poslednej podmienky (uhlopriečky) je za 3b, aj s uhlopriečkami za 4b.
 
-*Pomôcka*: Použite výrokovologickú premennú `q_i_j`, <code>0 &le; i,j &lt; N</code>,
-ktorej pravdivostná hodnota bude hovoriť, či je alebo nie je na pozícii `i,j`
+*Pomôcka*: Použite výrokovologickú premenné `q_i_j`, <code>0 &le; i,j &lt; N</code>,
+ktorých pravdivostná hodnota bude hovoriť, či je alebo nie je na pozícii `i,j`
 umiestnená dáma.
 
 *Pomôcka 2*: Pre SAT solver musíme premenné `q_i_j` zakódovať na čísla.
@@ -48,27 +48,40 @@ má byť `N`, musí byť v každom riadku práve jedna).
 riadku), atď.
 
 *Pomocka 5*: V adresári [examples/party](../examples/party) je ukážkový program
-(c++, možno časom pribudnú ďalšie), ktorý môžete použiť ako kostru vášho riešenia.
+(c++ a python) ktorý môžete použiť ako kostru vášho riešenia.
 
 ### Technické detaily riešenia
 
 Riešenie odovzdávajte do vetvy `cv02` v adresári `cv02`.
-Odovzdávajte program, ktorý:
-- zo štandardného vstupu načíta jediné číslo `N` - rozmer šachovnice
-  (a počet dám)
-- vypíše na štandardný výstup `N` dvojíc čísel `r s`oddelených medzerou, každú dvojicu
-  na samostatnom riadku, pričom každá dvojica reprezentuje pozíciu (riadok, stĺpec) jednej
-  dámy, súradnice sú od `0` po `N-1`.
 
-#### Príklad vstupu:
-```
-4
-```
-#### Príklad výstupu:
-```
-1 0
-3 1
-0 2
-2 3
-```
+Všetky ukážkové a testovacie súbory k tomuto cvičeniu si môžete stiahnuť
+ako jeden zip súbor
+[cv02.zip](https://github.com/FMFI-UK-1-AIN-411/udvl/archive/cv02.zip).
+
+Riešenie implementujte ako triedu `NQueens` s metódou `solve`, ktorá má jediný
+argument - počet dám (resp. veľkosť šachovnice) a vracia zoznam súradníc
+jednotlivých dám.  Ak pre daný počet dám rozloženie neexistuje, metóda vráti
+prázdny zoznam.
+
+### Python
+Odovzdajte súbor `nqueens.py` v ktorom je implementovaná trieda `NQueens`
+obsahujúca metódu `solve`. Metóda `solve` má jediný argument N (číslo - počet dám)
+a vracia zoznam dvojíc čísel (súradnice dám).
+
+Program [`cv04test.py`](cv04test.py) musí korektne zbehnúť s vašou knižnicou
+(súborom `sudoku.py`, ktorý odovzdáte).
+
+### C++
+Odovzdajte súbor `NQueens.cpp` v ktorom implementujete triedu `NQueens` definovanú
+v hlavičkovom súbore `NQueens.h`. Testovací program [`cv02test.cpp`](cv02test.cpp) musí ísť
+skompilovať s vaším riešením príkazom `g++ -Wall --std=c++11 -o cv02test *.cpp`
+a korektne zbehnúť.
+
+Ak si neviete ináč rady a potrebujete doplniť ďaľšie veci do `NQueens.h`
+(pomocné metódy atď), môžete tento súbor zmeniť (nezabudnite ho odovzdať).
+
+###Java
+Odovzdajte súbor `NQueens.java` ktorý obsahuje implementáciu triedy `NQueens`
+s metódou `int[][] solve(int N)` (bohužiaľ testy sa nám z časových dôvodov
+neoplatilo vyrábať).
 
