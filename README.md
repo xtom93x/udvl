@@ -1,7 +1,14 @@
 Úvod do výpočtovej logiky
 =========================
 
+
 Stránka predmetu je http://dai.fmph.uniba.sk/~siska/udvl/.
+
+Oznamy
+------
+* **25.2.** Termín na druhé cvičenia: zahlasujte prosím čím skôr
+  v [doodle](http://doodle.com/8egdvcun25s5pyrb) za najvýhodnejší termín.
+  Predbežný čas uzavretia hlasovania je štvrtok večer/piatok rano.
 
 Cvičenia
 --------
