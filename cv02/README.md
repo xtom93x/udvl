@@ -11,13 +11,9 @@ Podľa návodu na [odovzdávanie riešení](../odovzdavanie.md) odovzdajte
 riešenie prvého cvičenia. Riešenie odovzdajte do vetvy (branch) `cv01`
 v adresári `cv01`.
 
-Odovzdajte dva súbory:
-- `spy-text.txt` - textová verzia vstupu (s názvami premenných "MG", "MR"
-  atď.)
-- `spy-cnf.txt` - reálny vstup pre SAT solver (DIMACS CNF formát s
-  číselnými premennými atď.)
-
-Ak nemáte odložené obidve verzie riešenia, odovzdajte aspoň jednu.
+Odovzdajte súbor `spy.txt` ktorý obsahuje "textovú" verzia vstupu pre SAT solver
+(s názvami premenných "MG", "MR" atď.) vrátane správne znegovaného tvrdenia,
+ktoré chcete dokázať.
 
 ## N-queens (4b)
 
