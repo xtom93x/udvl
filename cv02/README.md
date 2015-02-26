@@ -29,7 +29,7 @@ tak, aby sa navzájom neohrozovali. Ohrozovanie dám je v zmysle
 
 Vyriešená úloha bez poslednej podmienky (uhlopriečky) je za 3b, aj s uhlopriečkami za 4b.
 
-*Pomôcka*: Použite výrokovologickú premenné `q_i_j`, <code>0 &le; i,j &lt; N</code>,
+*Pomôcka*: Použite výrokovologické premenné `q_i_j`, <code>0 &le; i,j &lt; N</code>,
 ktorých pravdivostná hodnota bude hovoriť, či je alebo nie je na pozícii `i,j`
 umiestnená dáma.
 
@@ -68,8 +68,8 @@ Odovzdajte súbor `nqueens.py` v ktorom je implementovaná trieda `NQueens`
 obsahujúca metódu `solve`. Metóda `solve` má jediný argument N (číslo - počet dám)
 a vracia zoznam dvojíc čísel (súradnice dám).
 
-Program [`cv04test.py`](cv04test.py) musí korektne zbehnúť s vašou knižnicou
-(súborom `sudoku.py`, ktorý odovzdáte).
+Program [`cv02test.py`](cv02test.py) musí korektne zbehnúť s vašou knižnicou
+(súborom `nqueens.py`, ktorý odovzdáte).
 
 ### C++
 Odovzdajte súbor `NQueens.cpp` v ktorom implementujete triedu `NQueens` definovanú
