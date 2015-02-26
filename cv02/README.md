@@ -3,7 +3,7 @@ Cvičenie 2
 
 Riešenie prvého cvičenia odovzdávajte do **Stredy 4.3. 8:09:59**.
 
-Riešenie tohoto cvičenia odovzdávajte do **Stredy 4.3. 8:09:59**.
+Riešenie tohoto cvičenia odovzdávajte do **Nedele 8.3. 23:59:59**.
 
 ## Odovzdanie cvičenia 1
 
