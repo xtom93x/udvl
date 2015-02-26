@@ -17,6 +17,11 @@ Cvičenia
 * [Cvičenie 1](cv01)
 * [Cvičenie 2](cv02)
 
+Prednášky
+---------
+* 19.2. Úvod: administratívia, motivácia
+* 26.2. [udvl02.pdf](slides/udvl02.pdf): výroková logika (základné definície)
+
 [Inštrukcie na odovzdávanie riešení](odovzdavanie.md)
 
 Za účelom odovzdávania cvičení získate prístup k súkromnému repozitáru na GitHub-e.
