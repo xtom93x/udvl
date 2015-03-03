@@ -20,6 +20,9 @@ Cvičenia
 * [Cvičenie 2](cv02)
 * [Cvičenie 3](cv03)
 
+Bonusy:
+* [Bonus 1](bonus01)
+
 Prednášky
 ---------
 * 19.2. Úvod: administratívia, motivácia
