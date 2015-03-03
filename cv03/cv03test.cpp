@@ -44,8 +44,7 @@ public:
 		std::cerr << "Testing " << str << std::endl;
 		compare(f->toString(), str, "toString");
 		for (const auto &c : cases) {
-//			std::cerr << "Interpretation " /* << TODO c.i */ << std::endl;
-			std::cerr << "Interpretation " << c.i << std::endl;
+			std::cerr << "  Interpretation " << c.i << std::endl;
 			compare(f->eval(c.i), c.result, "eval");
 		}
 		delete f;
@@ -188,6 +187,37 @@ int main()
 				Case(interps2[2], true),
 				Case(interps2[3], false),
 			});
+
+	{
+		std::cerr << "Testing Negation.originalFormula" << std::endl;
+		Formula *a = new Variable("a");
+		Formula *na = new Negation(a);
+		Negation *nna = new Negation(na);
+		t.compare(nna->originalFormula(), na, "Negation.originalFormula");
+		delete nna;
+	}
+
+	{
+		std::cerr << "Testing Implication rightSide / leftSide" << std::endl;
+		Formula *a = new Variable("a");
+		Formula *b = new Variable("b");
+		Formula *na = new Negation(a);
+		Implication *nab = new Implication(na, b);
+		t.compare(nab->leftSide(), na, "Implication.leftSide");
+		t.compare(nab->rightSide(), b, "Implication.rightSide");
+		delete nab;
+	}
+
+	{
+		std::cerr <<  "Testing Equivalence rightSide / leftSide" << std::endl;
+		Formula *a = new Variable("a");
+		Formula *b = new Variable("b");
+		Formula *na = new Negation(a);
+		Equivalence *nab = new Equivalence(na, b);
+		t.compare(nab->leftSide(), na, "Equivalence.leftSide");
+		t.compare(nab->rightSide(), b, "Equivalence.rightSide");
+		delete nab;
+	}
 
 	t.status();
 	return 0;
