@@ -166,6 +166,33 @@ public class Cv03Test {
                 }
         );
 
+        {
+            System.out.println("Testing Negation.originalFormula");
+            Formula a = new Variable("a");
+            Formula na = new Negation(a);
+            Negation nna = new Negation(na);
+            t.compare(nna.originalFormula(), na, "Negation.originalFormula");
+        }
+
+        {
+            System.out.println("Testing Implication rightSide / leftSide");
+            Formula a = new Variable("a");
+            Formula b = new Variable("b");
+            Formula na = new Negation(a);
+            Implication nab = new Implication(na, b);
+            t.compare(nab.leftSide(), na, "Implication.leftSide");
+            t.compare(nab.rightSide(), b, "Implication.rightSide");
+        }
+
+        {
+            System.out.println("Testing Equivalence rightSide / leftSide");
+            Formula a = new Variable("a");
+            Formula b = new Variable("b");
+            Formula na = new Negation(a);
+            Equivalence nab = new Equivalence(na, b);
+            t.compare(nab.leftSide(), na, "Equivalence.leftSide");
+            t.compare(nab.rightSide(), b, "Equivalence.rightSide");
+        }
         t.status();
     }
 }
