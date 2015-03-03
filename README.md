@@ -15,7 +15,9 @@ Oznamy
 Cvičenia
 --------
 * Str 8:10 H6
+* Stv 13:10 H6
 
+Zadania:
 * [Cvičenie 1](cv01)
 * [Cvičenie 2](cv02)
 * [Cvičenie 3](cv03)
