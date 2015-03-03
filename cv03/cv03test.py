@@ -156,6 +156,29 @@ t.test(
             (interps2[3], False),
         ])
 
+
+print("Testing Negation.originalFormula")
+a = Variable('a')
+na = Negation(a)
+nna = Negation(na)
+t.compare(nna.originalFormula(), na, "Negation.originalFormula")
+
+print("Testing Implication rightSide / leftSide")
+a = Variable('a')
+b = Variable('b')
+na = Negation(a)
+nab = Implication(na, b)
+t.compare(nab.leftSide(), na, "Implication.leftSide")
+t.compare(nab.rightSide(), b, "Implication.rightSide")
+
+print("Testing Equivalence rightSide / leftSide")
+a = Variable('a')
+b = Variable('b')
+na = Negation(a)
+nab = Equivalence(na, b)
+t.compare(nab.leftSide(), na, "Equivalence.leftSide")
+t.compare(nab.rightSide(), b, "Equivalence.rightSide")
+
 t.status()
 
 # vim: set sw=4 ts=4 sts=4 sw :
